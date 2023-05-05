@@ -1,3 +1,18 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
+    flex-direction: row;
+  }
+}
+
 .site-list__link {
   padding-top: 22px;
   padding-bottom: 24px;
