@@ -9,4 +9,23 @@
 
 .additional-items__list {
   margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-items__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    width: 633px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -4,12 +4,14 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    width: 440px;
+    min-width: 440px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    width: 478px;
     flex-direction: row;
+    min-width: 478px;
+    justify-content: space-between;
   }
 }
 
@@ -21,4 +23,8 @@
 .site-list__item {
   padding-top: 22px;
   padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

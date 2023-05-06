@@ -10,33 +10,35 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-icon logo-icon">
-      <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
-        alt="Магазин Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <!-- Здесь будет реализация через классы в JS -->
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list list">
-          <li class="site-list__item">
-            <a class="link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a class="link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo-icon logo-icon">
+        <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
+          alt="Магазин Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <!-- Здесь будет реализация через классы в JS -->
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list list">
+            <li class="site-list__item">
+              <a class="link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a class="link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page__form form-container">
     <section class="form-container__options options">
@@ -77,11 +79,9 @@
           <h3 class="form__header">Контактные данные (владельца кота)</h3>
           <fieldset class="form__owner owner">
             <label class="owner__label label" for="owner-email">E-mail:*</label>
-            <input required class="owner__input input" placeholder="kuklachev@gmail.com" type="email"
-              id="owner-email">
+            <input required class="owner__input input" placeholder="kuklachev@gmail.com" type="email" id="owner-email">
             <label class="owner__label label" for="owner-phone">Телефон:*</label>
-            <input required class="owner__input input" placeholder="8 (960) 900-60-90" type="tel"
-              id="owner-phone">
+            <input required class="owner__input input" placeholder="8 (960) 900-60-90" type="tel" id="owner-phone">
           </fieldset>
         </div>
         <div class="comment-wrapper">
@@ -119,8 +119,10 @@
             </ul>
           </fieldset>
         </div>
-        <button class="form__button button" type="submit">Отправить заявку</button>
-        <p class="form__explanation font-lato">* — Обязательные поля</p>
+        <div class="form__wrapper-footer">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+          <p class="form__explanation font-lato">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
     <section class="partnership partnership--pages">
