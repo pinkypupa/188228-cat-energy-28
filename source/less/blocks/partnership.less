@@ -1,11 +1,21 @@
 .partnership {
   &--pages {
-    background-color: #f2f2f2;
+    background-color: @light-grey;
   }
 }
 
 .partnership__wrapper {
   padding: 26px 0;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 425px;
+    justify-content: space-between;
+  }
 }
 
 .partnership__header {
@@ -15,13 +25,41 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+  width: 139px;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+  }
 }
 
 .partnership__address {
   font-size: 14px;
   line-height: 20px;
+  max-width: 139px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 160px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 175px;
+    text-align: start;
+  }
 }
 
 .partnership__map {
-  padding: 362px;
+  padding: 181px;
+
+  @media (min-width: @tablet-width) {
+    padding: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 200px;
+  }
 }

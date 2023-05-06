@@ -3,3 +3,19 @@
   color: #000000;
   margin: 0;
 }
+
+.add__list {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 221px 190px;
+    grid-template-rows: 40px 40px 52px;
+    column-gap: 64px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
