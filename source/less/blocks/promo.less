@@ -1,12 +1,21 @@
 .promo {
-  background-color: #68b738d9;
+  &--background {
+    background: linear-gradient(rgba(104, 183, 56, 0.85) 62.9%, #ffffff 62.9%), url(../img/common/cat_background.png);
 
-  @media (min-width: @tablet-width) {
-    background-color: @basic-color;
+    @media (min-width: @tablet-width) {
+      background: none;
+      background-color: @basic-color;
+    }
+
+    @media (min-width: @desktop-width) {
+      background: none;
+      background-color: @basic-color;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    background-color: @basic-color;
+  &--background-image {
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -39,7 +48,7 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 302px;
+  margin-bottom: 29px;
   padding: 0 10px 0 10px;
 
   @media (min-width: @tablet-width) {
@@ -64,8 +73,8 @@
 .promo__button {
   font-size: 14px;
   line-height: 18px;
-  text-decoration: none;
   margin: 0 auto;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 0 0 91px;

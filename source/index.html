@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper inner-indent">
       <a class="main-header__logo-icon logo-icon">
         <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
           alt="Магазин Cat Energy">
@@ -41,18 +41,19 @@
     </div>
   </header>
   <main class="page__main-container main-container">
-    <section class="main-container__promo promo promo--background">
+    <section class="main-container__promo promo promo--background promo--background-image">
       <h2 class="promo__title basic-title">
         Функциональное питание для котов
       </h2>
       <p class="promo__subtitle">
         Занялся собой? Займись котом!
       </p>
-      <a class="promo__button button" href="#"><span>Подобрать
-          программу</span>
-      </a>
+      <img class="main-container__image inner-indent" src="img/common/food_can.svg"
+        alt="Функциональное питание для котов">
+      <a class="promo__button button" href="#">Подобрать
+        программу</a>
     </section>
-    <section class="goal-wrapper">
+    <section class="goal-wrapper inner-indent">
       <h2 class="visually-hidden">Различные цели программ питания</h2>
       <div class="goal-wrapper__block goal">
         <h3 class="goal__header">Похудение</h3>
@@ -61,6 +62,7 @@
           на диету! Cat
           Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <div class="goal__catalog-wrapper goal-catalog">
+          <!-- подумать, нужен ли тут теперь див, когда нет стрелочки в разметке  -->
           <a class="goal-catalog__link link" href="#">Каталог Slim</a>
         </div>
       </div>
@@ -73,7 +75,7 @@
         </div>
       </div>
     </section>
-    <section class="main-container__details details">
+    <section class="main-container__details details inner-indent">
       <h2 class="details__header">Как это работает</h2>
       <ul class="details__list list">
         <li class="details__item details__item--health">
@@ -98,7 +100,7 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__wrapper"> <!-- серый блок -->
+      <div class="example__wrapper inner-indent"> <!-- блок текста -->
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description font-lato">Борис сбросил 5 кг за 2 месяца, просто заменив
           свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих
@@ -125,7 +127,7 @@
       </div>
     </section>
     <section class="partnership">
-      <div class="partnership__wrapper">
+      <div class="partnership__wrapper inner-indent">
         <h2 class="partnership__header">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="partnership__address contacts font-lato">
           <p class="contacts__street ">ул. Большая Конюшенная, д. 19/8 </p>
@@ -133,12 +135,17 @@
         </address>
       </div>
       <div class="partnership__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728558!2d30.320472477004596!3d59.938716474915196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2srs!4v1683640798284!5m2!1sru!2srs"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
+        </iframe>
         <!-- здесь будет карта -->
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper inner-indent">
       <div class="main-footer__logo footer-logo logo-icon">
         <img class="main-footer__logo-image" src="img/logo/logo_cat_energy.svg" width="128" height="24"
           alt="Магазин Cat Energy">
@@ -160,7 +167,7 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link link font-lato" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/footer_copyright_icon.svg" alt="HTML Академия" width="27" height="34">
+          <img src="img/common/footer_copyright_icon.svg" alt="HTML Академия" width="27" height="34">
         </a>
       </div>
     </div>

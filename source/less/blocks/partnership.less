@@ -53,13 +53,21 @@
 }
 
 .partnership__map {
-  padding: 181px;
+  border: none;
+  display: block;
 
-  @media (min-width: @tablet-width) {
-    padding: 200px;
-  }
+  & iframe {
+    min-width: 320px;
+    min-height: 362px;
 
-  @media (min-width: @desktop-width) {
-    padding: 200px;
+    @media (min-width: @tablet-width) {
+      min-width: 768px;
+      min-height: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-width: 1440px;
+      min-height: 400px;
+    }
   }
 }

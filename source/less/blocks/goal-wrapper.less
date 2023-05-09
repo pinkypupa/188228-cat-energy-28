@@ -1,6 +1,7 @@
 .goal-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
@@ -8,19 +9,26 @@
 }
 
 .goal-wrapper__block {
-  width: 280px;
+  max-width: 280px;
   margin: 0 0 20px 0;
+  padding: 30px 33px 18px 20px;
+  box-sizing: border-box;
 
-  // Здесь нужно будет придумать что-то с :last-child
   @media (min-width: @tablet-width) {
-    height: 372px;
-    width: 708px;
+    // min-height: 372px;
+    max-width: 708px;
     margin: 0 0 30px 0;
+    padding: 77px 62px 53px 52px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 374px;
-    width: 570px;
+    // min-height: 374px;
+    max-width: 570px;
     margin: 0 80px 71px 0;
+    padding: 77px 61px 55px 52px;
+
+    &:last-child {
+      margin: 0 0 71px 0;
+    }
   }
 }
