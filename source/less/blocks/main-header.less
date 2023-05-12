@@ -1,26 +1,26 @@
 .main-header__wrapper {
   display: flex;
-  flex-direction: column;
-  // height: 65px;
-  // Нужно ли задавать высоту самого хедера? - подумать
+  // flex-direction: column;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 708px;
-    // height: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: space-between;
-    flex-direction: row;
+    // justify-content: space-between;
+    // flex-direction: row;
     width: 1220px;
   }
 }
 
 .main-header__logo-image {
   display: inline-block;
-  margin-right: 65px;
   height: 38px;
 
   @media (min-width: @tablet-width) {
@@ -29,15 +29,5 @@
 
   @media (min-width: @desktop-width) {
     height: 60px;
-  }
-}
-
-.main-nav__toggle {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
   }
 }

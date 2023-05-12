@@ -14,7 +14,7 @@
 
   @media (min-width: @desktop-width) {
     width: 425px;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 }
 
@@ -43,31 +43,34 @@
 
   @media (min-width: @tablet-width) {
     max-width: 160px;
-    text-align: end;
+    text-align: right;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 175px;
-    text-align: start;
+    text-align: left;
   }
 }
 
 .partnership__map {
   border: none;
   display: block;
+  // min-width: 320px;
+  height: 362px;
+  // пришлось сделать height вместо min-height, потому что с min не работает в ребёнке 100% height
 
-  & iframe {
-    min-width: 320px;
-    min-height: 362px;
-
-    @media (min-width: @tablet-width) {
-      min-width: 768px;
-      min-height: 400px;
-    }
-
-    @media (min-width: @desktop-width) {
-      min-width: 1440px;
-      min-height: 400px;
-    }
+  @media (min-width: @tablet-width) {
+    // min-width: 768px;
+    height: 400px;
   }
+
+  @media (min-width: @desktop-width) {
+    // min-width: 1440px;
+    height: 400px;
+  }
+}
+
+.partnership__iframe {
+  width: 100%;
+  height: 100%;
 }
