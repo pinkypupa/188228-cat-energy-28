@@ -7,13 +7,14 @@
     @media (min-width: @tablet-width) {
       background: none;
       padding: 62px 5px 0 120px;
+      margin-bottom: 526px;
       // background-color: @basic-color;
       // закоммитили, потому что иначе картинка банки не видна на заднем фоне
     }
 
     @media (min-width: @desktop-width) {
       background: linear-gradient(90deg, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url(../img/common/big_cat_background.png);
-      padding: 111px 0 185px 80px;
+      padding: 111px 0 185px 190px;
       // большой паддинг снизу для растяжки зелёного фона и "отталкивания" кнопки
       margin-bottom: 82px;
     }
@@ -23,7 +24,10 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media (min-width: @desktop-width) {}
+    @media (min-width: @desktop-width) {
+      background-position: right;
+      background-size: auto;
+    }
   }
 }
 
