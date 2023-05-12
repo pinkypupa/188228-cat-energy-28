@@ -17,12 +17,20 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    min-width: 609px;
+    position: absolute;
+    top: 275px;
+    left: 30px;
+    z-index: -1;
+    min-width: 709px;
     min-height: 609px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 552px;
     min-height: 500px;
+    position: absolute;
+    top: 141px;
+    right: 0;
+    z-index: 2;
   }
 }
