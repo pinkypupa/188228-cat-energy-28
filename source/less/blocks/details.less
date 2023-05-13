@@ -7,6 +7,8 @@
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
     margin-bottom: 32px;
   }
 
@@ -49,6 +51,7 @@
     padding: 111px 0 0 0;
     max-width: 250px;
     flex-direction: column;
+    min-height: 0;
   }
 
   &--health {
@@ -112,5 +115,10 @@
       background-position: left top;
       background-size: 80px 80px;
     }
+  }
+
+  .details__description {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
