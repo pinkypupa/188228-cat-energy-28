@@ -1,8 +1,69 @@
 .goal {
   background-color: #d9d9d9;
+  position: relative;
 
   &--form {
     background-color: @basic-color;
+  }
+}
+
+.goal__loss {
+  &::after {
+    content: "";
+    background-image: url(../img/logo/loss_logo.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+    width: 50px;
+    height: 53px;
+    top: 21px;
+    left: 22px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 200px 211px;
+      width: 200px;
+      height: 211px;
+      top: 80px;
+      left: 446px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-size: 100px 106px;
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 52px;
+    }
+  }
+}
+
+.goal__gain {
+  &::after {
+    content: "";
+    background-image: url(../img/logo/gain_logo.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+    width: 67px;
+    height: 50px;
+    top: 24px;
+    left: 13px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 268px 200px;
+      width: 268px;
+      height: 200px;
+      top: 90px;
+      left: 412px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-size: 134px 100px;
+      width: 134px;
+      height: 100px;
+      top: 47px;
+      left: 33px;
+    }
   }
 }
 
@@ -13,14 +74,14 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 22px;
-  text-align: center;
-  // тут не совсем center - потом исправить
+  padding-left: 69px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 137px;
     margin-bottom: 73px;
     // под вопросом
   }
