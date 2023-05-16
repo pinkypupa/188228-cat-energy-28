@@ -1,3 +1,20 @@
+.details {
+  // width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: #e6e6e6;
+      width: calc(100% + 60px);
+      left: -30px;
+    }
+  }
+}
+
 .details__header {
   font-weight: 400;
   font-size: 36px;
@@ -9,7 +26,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -38,13 +55,13 @@
   line-height: 18px;
   margin-top: 0;
   margin-bottom: 20px;
-  padding: 0 20px 0 80px;
+  padding-left: 80px;
   max-width: 280px;
   display: flex;
   flex-direction: row;
   position: relative;
   max-width: 230px;
-  min-height: 280px;
+  // min-height: 280px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -52,6 +69,8 @@
     max-width: 250px;
     flex-direction: column;
     min-height: 0;
+    // временное решение по нижнему большому марджину
+    margin-bottom: 130px;
   }
 
   &--health {
@@ -90,6 +109,21 @@
     @media (min-width: @tablet-width) {
       background-position: left top;
       background-size: 80px 80px;
+
+      &::before {
+        content: "2";
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #F2F2F2;
+        position: absolute;
+        z-index: -1;
+        top: -37px;
+        right: 0;
+      }
     }
   }
 
@@ -102,6 +136,21 @@
     @media (min-width: @tablet-width) {
       background-position: left top;
       background-size: 80px 80px;
+
+      &::before {
+        content: "3";
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #F2F2F2;
+        position: absolute;
+        z-index: -1;
+        top: -37px;
+        right: 0;
+      }
     }
   }
 
@@ -114,11 +163,32 @@
     @media (min-width: @tablet-width) {
       background-position: left top;
       background-size: 80px 80px;
+
+      &::before {
+        content: "4";
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #F2F2F2;
+        position: absolute;
+        z-index: -1;
+        top: -37px;
+        right: 0;
+      }
     }
   }
 
   .details__description {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }

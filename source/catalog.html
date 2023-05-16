@@ -10,28 +10,29 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper inner-indent">
       <a class="main-header__logo-icon logo-icon">
         <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
           alt="Магазин Cat Energy">
       </a>
-      <nav class="main-nav">
-        <!-- Здесь будет реализация через классы в JS -->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <!-- Здесь будет реализация через классы в JS main-nav--closed main-nav--opened -->
+        <!-- Если не работает JS, применяется класс main-nav--nojs-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list list">
             <li class="site-list__item">
-              <a class="link" href="index.html">
+              <a class="site-list__link link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a class="link" href="catalog.html">
+              <a class="site-list__link link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a class="link" href="form.html">
+              <a class="site-list__link link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -62,8 +63,8 @@
                 <span class="nutrition__category font-lato">Цена</span>
                 <span class="nutrition__detail font-lato">700 ₽</span>
               </div>
-              <a class="nutrition__button button" href="#">Заказать</a>
             </div>
+            <a class="nutrition__button button" href="#">Заказать</a>
           </li>
           <li class="product__item nutrition">
             <img class="nutrition__image" src="img/catalog/chicken_huge.png" width="140" height="112"
@@ -82,8 +83,8 @@
                 <span class="nutrition__category font-lato">Цена</span>
                 <span class="nutrition__detail font-lato">1000 ₽</span>
               </div>
-              <a class="nutrition__button button" href="#">Заказать</a>
             </div>
+            <a class="nutrition__button button" href="#">Заказать</a>
           </li>
           <li class="product__item nutrition">
             <img class="nutrition__image" src="img/catalog/fish_small.png" width="140" height="112"
@@ -102,8 +103,8 @@
                 <span class="nutrition__category font-lato">Цена</span>
                 <span class="nutrition__detail font-lato">700 ₽</span>
               </div>
-              <a class="nutrition__button button" href="#">Заказать</a>
             </div>
+            <a class="nutrition__button button" href="#">Заказать</a>
           </li>
           <li class="product__item nutrition">
             <img class="nutrition__image" src="img/catalog/fish_huge.png" width="140" height="112"
@@ -122,8 +123,8 @@
                 <span class="nutrition__category font-lato">Цена</span>
                 <span class="nutrition__detail font-lato">1000 ₽</span>
               </div>
-              <a class="nutrition__button button" href="#">Заказать</a>
             </div>
+            <a class="nutrition__button button" href="#">Заказать</a>
           </li>
           <li class="product__item nutrition">
             <img class="nutrition__image" src="img/catalog/buckwheat_small.png" width="140" height="112"
@@ -142,8 +143,8 @@
                 <span class="nutrition__category font-lato">Цена</span>
                 <span class="nutrition__detail font-lato">400 ₽</span>
               </div>
-              <a class="nutrition__button button" href="#">Заказать</a>
             </div>
+            <a class="nutrition__button button" href="#">Заказать</a>
           </li>
           <li class="product__item nutrition">
             <img class="nutrition__image" src="img/catalog/buckwheat_huge.png" width="140" height="112"
@@ -162,8 +163,8 @@
                 <span class="nutrition__category font-lato">Цена</span>
                 <span class="nutrition__detail font-lato">700 ₽</span>
               </div>
-              <a class="nutrition__button button" href="#">Заказать</a>
             </div>
+            <a class="nutrition__button button" href="#">Заказать</a>
           </li>
           <li class="product__item nutrition">
             <img class="nutrition__image" src="img/catalog/rice_small.png" width="140" height="112"
@@ -182,8 +183,8 @@
                 <span class="nutrition__category font-lato">Цена</span>
                 <span class="nutrition__detail font-lato">500 ₽</span>
               </div>
-              <a class="nutrition__button button" href="#">Заказать</a>
             </div>
+            <a class="nutrition__button button" href="#">Заказать</a>
           </li>
           <li class="product__item more-info">
             <h4 class="more-info__title nutrition__title">Показать ещё 100500 товаров</h4>
@@ -198,26 +199,34 @@
           <ul class="additional-items__list list">
             <li class="additional-items__item additional-card">
               <h4 class="additional-card__name">Сахарозаменитель</h4>
-              <span class="additional-card__volume font-lato">1 упаковка (100г)</span>
-              <span class="additional-card__price font-lato">200 ₽</span>
+              <div class="additional-card__text">
+                <span class="additional-card__volume font-lato">1 упаковка (100г)</span>
+                <span class="additional-card__price font-lato">200 ₽</span>
+              </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </li>
             <li class="additional-items__item additional-card">
               <h4 class="additional-card__name">Питьевая вода</h4>
-              <span class="additional-card__volume font-lato">5 литров</span>
-              <span class="additional-card__price font-lato">50 ₽</span>
+              <div class="additional-card__text">
+                <span class="additional-card__volume font-lato">5 литров</span>
+                <span class="additional-card__price font-lato">50 ₽</span>
+              </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </li>
             <li class="additional-items__item additional-card">
               <h4 class="additional-card__name">Молоко</h4>
-              <span class="additional-card__volume font-lato">1 литр</span>
-              <span class="additional-card__price font-lato">100 ₽</span>
+              <div class="additional-card__text">
+                <span class="additional-card__volume font-lato">1 литр</span>
+                <span class="additional-card__price font-lato">100 ₽</span>
+              </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </li>
             <li class="additional-items__item additional-card">
               <h4 class="additional-card__name">Витамины</h4>
-              <span class="additional-card__volume font-lato">1 упаковка (30г)</span>
-              <span class="additional-card__price font-lato">300 ₽</span>
+              <div class="additional-card__text">
+                <span class="additional-card__volume font-lato">1 упаковка (30г)</span>
+                <span class="additional-card__price font-lato">300 ₽</span>
+              </div>
               <a class="additional-card__button button" href="#">Заказать</a>
             </li>
           </ul>
@@ -230,7 +239,7 @@
       </div>
     </section>
     <section class="partnership partnership--pages">
-      <div class="partnership__wrapper">
+      <div class="partnership__wrapper inner-indent">
         <h2 class="partnership__header">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="partnership__address contacts font-lato">
           <p class="contacts__street ">ул. Большая Конюшенная, д. 19/8 </p>
@@ -243,13 +252,13 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper inner-indent">
       <div class="main-footer__logo footer-logo logo-icon">
         <img class="main-footer__logo-image" src="img/logo/logo_cat_energy.svg" width="128" height="24"
           alt="Магазин Cat Energy">
       </div>
       <div class="main-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte link" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
@@ -270,7 +279,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

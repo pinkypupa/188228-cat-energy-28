@@ -1,7 +1,17 @@
-.example__wrapper {
+.example {
   background-color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(#ffffff 57.5%, #eaeaea 57.5%);
+  }
+}
+
+.example__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .example__title {
@@ -56,7 +66,7 @@
 .example__statistics {
   display: flex;
   flex-direction: row;
-  width: 280px;
+  // width: 280px;
   justify-content: space-between;
 }
 

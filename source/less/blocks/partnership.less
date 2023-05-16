@@ -2,6 +2,10 @@
   &--pages {
     background-color: @light-grey;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
 .partnership__wrapper {
@@ -14,8 +18,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 425px;
-    // justify-content: space-between;
+    position: absolute;
+    box-sizing: border-box;
+    content: "";
+    padding: 56px 60px;
+    z-index: 5;
+    background-color: #ffffff;
+    min-width: 565px;
+    left: 7.6%;
+    top: 24%;
   }
 }
 

@@ -10,28 +10,29 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper inner-indent">
       <a class="main-header__logo-icon logo-icon">
         <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
           alt="Магазин Cat Energy">
       </a>
-      <nav class="main-nav">
-        <!-- Здесь будет реализация через классы в JS -->
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <!-- Здесь будет реализация через классы в JS main-nav--closed main-nav--opened -->
+        <!-- Если не работает JS, применяется класс main-nav--nojs-->
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list list">
             <li class="site-list__item">
-              <a class="link" href="index.html">
+              <a class="site-list__link link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="link" href="catalog.html">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="link" href="form.html">
+            <li class="site-list__item">
+              <a class="site-list__link link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -139,7 +140,7 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper inner-indent">
       <div class="main-footer__logo footer-logo logo-icon">
         <img class="main-footer__logo-image" src="img/logo/logo_cat_energy.svg" width="128" height="24"
           alt="Магазин Cat Energy">
@@ -166,7 +167,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

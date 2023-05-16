@@ -1,8 +1,29 @@
+.more-info {
+  padding-top: 53px;
+}
+
 .more-info__title {
   text-align: center;
   color: #111111;
   margin: 0;
   margin-bottom: 8px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 45%;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    box-shadow: none;
+  }
 }
 
 .more-info__subtitle {
@@ -14,6 +35,8 @@
 }
 
 .more-info__button {
+  padding: 10px 20px;
+
   @media (min-width: @tablet-width) {
     max-width: 249px;
   }

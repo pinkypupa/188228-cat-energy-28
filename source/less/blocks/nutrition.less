@@ -1,3 +1,22 @@
+.nutrition {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 2.8fr 1fr;
+  row-gap: 13px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #ebebeb;
+    width: 1000vw;
+    // чтобы знатно тянулось :)
+    left: -40px;
+    top: -5%;
+  }
+}
+
 .nutrition__title {
   font-weight: 400;
   font-size: 16px;
@@ -21,6 +40,9 @@
 .nutrition__button {
   font-size: 16px;
   line-height: 20px;
+  padding: 10px 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 
   @media (min-width: @tablet-width) {
     max-width: 248px;

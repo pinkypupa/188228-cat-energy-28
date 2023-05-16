@@ -1,15 +1,13 @@
 .page {
-  max-width: 320px;
+  min-width: 320px;
   min-height: 100vh;
-  // margin: 0 auto;
-  // можно же указать vh вместо процентов? в чем преимущество?
 
   @media (min-width: @tablet-width) {
-    max-width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1440px;
+    min-width: 1440px;
   }
 }
 
