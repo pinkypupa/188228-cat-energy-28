@@ -1,7 +1,6 @@
 .statistics-wrapper {
   padding: 15px 5px 0 5px;
-  min-width: 124px;
-  max-width: 124px;
+  width: 124px;
   border: 1px solid #cdcdcd;
   border-radius: 4%;
   box-sizing: border-box;
@@ -9,8 +8,7 @@
   margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    min-width: 162px;
-    max-width: 162px;
+    width: 162px;
     margin-right: 42px;
   }
 }
@@ -44,5 +42,9 @@
     line-height: 14px;
     padding: 5px 8px 8px 8px;
     background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
   }
 }

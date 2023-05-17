@@ -1,5 +1,4 @@
 .details {
-  // width: fit-content;
   margin-left: auto;
   margin-right: auto;
 
@@ -9,7 +8,7 @@
       position: absolute;
       height: 1px;
       background-color: #e6e6e6;
-      width: calc(100% + 60px);
+      width: 100vw;
       left: -30px;
     }
   }
@@ -38,6 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: stretch;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -62,12 +62,12 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 111px 0 0 0;
+    padding: 0;
+    padding-top: 111px;
+    padding-bottom: 130px;
     max-width: 250px;
     flex-direction: column;
     min-height: 0;
-    // временное решение по нижнему большомdetails__ite'у марджину
-    margin-bottom: 130px;
   }
 
   &--health {

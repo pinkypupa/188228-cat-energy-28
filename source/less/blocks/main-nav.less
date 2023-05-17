@@ -51,8 +51,16 @@
   }
 
   .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    min-height: 0;
+    // position: static;
+    // min-height: 0;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    z-index: 10;
+    min-height: 30vh;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 264px;
   }
 
   .main-nav--nojs .site-list__item {
@@ -61,6 +69,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+
   &::before,
   &::after {
     content: "";
