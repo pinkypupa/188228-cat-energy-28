@@ -51,12 +51,20 @@
       <p class="options__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__personal-data personal-data">
-          <label class="personal-data__label label" for="cat-name">Имя:*</label>
-          <input required class="personal-data__input input" placeholder="Барсик" type="text" id="cat-name">
-          <label class="personal-data__label label" for="cat-weight">Вес (кг):*</label>
-          <input required class="personal-data__input input" placeholder="7" type="number" id="cat-weight">
-          <label class="personal-data__label label" for="cat-age">Возраст (лет):</label>
-          <input class="personal-data__input input" placeholder="7" type="number" id="cat-age">
+          <div class="form__wrapper">
+            <label class="personal-data__label label" for="cat-name">Имя:*</label>
+            <input required class="personal-data__input input" placeholder="Барсик" type="text" id="cat-name">
+          </div>
+          <div class="form__wrapper">
+            <label class="personal-data__label label" for="cat-weight">Вес (кг):*</label>
+            <input required class="personal-data__input personal-data__input--weight input" placeholder="7"
+              type="number" id="cat-weight">
+          </div>
+          <div class="form__wrapper">
+            <label class="personal-data__label label" for="cat-age">Возраст (лет):</label>
+            <input class="personal-data__input personal-data__input--age input" placeholder="7" type="number"
+              id="cat-age">
+          </div>
         </fieldset>
         <fieldset class="form__goal goal goal--form">
           <ul class="goal__list list">
@@ -83,10 +91,15 @@
         <div class="owner-wrapper">
           <h3 class="form__header">Контактные данные (владельца кота)</h3>
           <fieldset class="form__owner owner">
-            <label class="owner__label label" for="owner-email">E-mail:*</label>
-            <input required class="owner__input input" placeholder="kuklachev@gmail.com" type="email" id="owner-email">
-            <label class="owner__label label" for="owner-phone">Телефон:*</label>
-            <input required class="owner__input input" placeholder="8 (960) 900-60-90" type="tel" id="owner-phone">
+            <div class="form__wrapper">
+              <label class="owner__label label" for="owner-email">E-mail:*</label>
+              <input required class="owner__input input" placeholder="kuklachev@gmail.com" type="email"
+                id="owner-email">
+            </div>
+            <div class="form__wrapper">
+              <label class="owner__label label" for="owner-phone">Телефон:*</label>
+              <input required class="owner__input input" placeholder="8 (960) 900-60-90" type="tel" id="owner-phone">
+            </div>
           </fieldset>
         </div>
         <div class="comment-wrapper">
