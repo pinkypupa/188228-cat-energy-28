@@ -8,7 +8,8 @@
       position: absolute;
       height: 1px;
       background-color: #e6e6e6;
-      width: -webkit-fill-available;
+      width: -moz-available;          /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
       left: -30px;
     }
   }
