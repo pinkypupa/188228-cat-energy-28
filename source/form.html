@@ -12,8 +12,12 @@
   <header class="main-header">
     <div class="main-header__wrapper inner-indent">
       <a class="main-header__logo-icon logo-icon">
-        <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
-          alt="Магазин Cat Energy">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo/header_desktop.svg" width="202" height="60">
+          <source media="(min-width: 768px)" srcset="img/logo/header_tablet.svg" width="174" height="52">
+          <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
+            alt="Магазин Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <!-- Здесь будет реализация через классы в JS main-nav--closed main-nav--opened -->

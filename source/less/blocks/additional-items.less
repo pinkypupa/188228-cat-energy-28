@@ -5,12 +5,54 @@
   text-align: left;
   margin: 0;
   margin-bottom: 49px;
+  position: relative;
+  max-width: 247px;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #68b738;
+    width: 100vw;
+    top: 64%;
+    left: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+    padding: 0 36px;
+    // как тут быть с переполнением?
+    max-width: 340px;
+    background-color: #ffffff;
+
+    &::before {
+      left: -30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      left: -110px;
+    }
+  }
 }
 
 .additional-items__list {
   margin-bottom: 35px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .additional-items__item {
@@ -20,12 +62,9 @@
 
   @media (min-width: @tablet-width) {
     align-items: center;
-    width: 633px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 896px;
-    flex-direction: row;
     justify-content: space-between;
   }
 }

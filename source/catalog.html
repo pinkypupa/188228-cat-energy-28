@@ -12,8 +12,12 @@
   <header class="main-header">
     <div class="main-header__wrapper inner-indent">
       <a class="main-header__logo-icon logo-icon">
-        <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
-          alt="Магазин Cat Energy">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo/header_desktop.svg" width="202" height="60">
+          <source media="(min-width: 768px)" srcset="img/logo/header_tablet.svg" width="174" height="52">
+          <img class="main-header__logo-image" src="img/logo/header_mobile.svg" width="191" height="38"
+            alt="Магазин Cat Energy">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <!-- Здесь будет реализация через классы в JS main-nav--closed main-nav--opened -->
@@ -49,9 +53,9 @@
           <li class="product__item nutrition">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/chicken_small_desktop.png 1x, img/catalog/chicken_small_desktop@2x.png 2x">
+                srcset="img/catalog/chicken_small_desktop.png 1x, img/catalog/chicken_small_desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 768px)"
-                srcset="img/catalog/chicken_small_tablet.png 1x, img/catalog/chicken_small_tablet@2x.png 2x">
+                srcset="img/catalog/chicken_small_tablet.png 1x, img/catalog/chicken_small_tablet@2x.png 2x" width="168" height="200">
               <img class="nutrition__image" src="img/catalog/chicken_small.png"
                 srcset="img/catalog/chicken_small@2x.png" width="140" height="112"
                 alt="Cat Energy со вкусом курицы, объём 500 грамм">
@@ -76,9 +80,9 @@
           <li class="product__item nutrition">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/chicken_huge_desktop.png 1x, img/catalog/chicken_huge_desktop@2x.png 2x">
+                srcset="img/catalog/chicken_huge_desktop.png 1x, img/catalog/chicken_huge_desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 768px)"
-                srcset="img/catalog/chicken_huge_tablet.png 1x, img/catalog/chicken_huge_tablet@2x.png 2x">
+                srcset="img/catalog/chicken_huge_tablet.png 1x, img/catalog/chicken_huge_tablet@2x.png 2x"  width="168" height="200">
               <img class="nutrition__image" src="img/catalog/chicken_huge.png" srcset="img/catalog/chicken_huge@2x.png"
                 width="140" height="112" alt="Cat Energy со вкусом курицы, объём 1000 грамм">
             </picture>
@@ -102,9 +106,9 @@
           <li class="product__item nutrition">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/fish_small_desktop.png 1x, img/catalog/fish_small_desktop@2x.png 2x">
+                srcset="img/catalog/fish_small_desktop.png 1x, img/catalog/fish_small_desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 768px)"
-                srcset="img/catalog/fish_small_tablet.png 1x, img/catalog/fish_small_tablet@2x.png 2x">
+                srcset="img/catalog/fish_small_tablet.png 1x, img/catalog/fish_small_tablet@2x.png 2x" width="168" height="200">
               <img class="nutrition__image" src="img/catalog/fish_small.png" srcset="img/catalog/fish_small@2x.png"
                 width="140" height="112" alt="Cat Energy со вкусом рыбы, объём 500 грамм">
             </picture>
@@ -128,9 +132,9 @@
           <li class="product__item nutrition">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/fish_huge_desktop.png 1x, img/catalog/fish_huge_desktop@2x.png 2x">
+                srcset="img/catalog/fish_huge_desktop.png 1x, img/catalog/fish_huge_desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 768px)"
-                srcset="img/catalog/fish_huge_tablet.png 1x, img/catalog/fish_huge_tablet@2x.png 2x">
+                srcset="img/catalog/fish_huge_tablet.png 1x, img/catalog/fish_huge_tablet@2x.png 2x" width="168" height="200">
               <img class="nutrition__image" src="img/catalog/fish_huge.png" srcset="img/catalog/fish_huge@2x.png"
                 width="140" height="112" alt="Cat Energy со вкусом рыбы, объём 1000 грамм">
             </picture>
@@ -154,9 +158,9 @@
           <li class="product__item nutrition">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/buckwheat_small_desktop.png 1x, img/catalog/buckwheat_small_desktop@2x.png 2x">
+                srcset="img/catalog/buckwheat_small_desktop.png 1x, img/catalog/buckwheat_small_desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 768px)"
-                srcset="img/catalog/buckwheat_small_tablet.png 1x, img/catalog/buckwheat_small_tablet@2x.png 2x">
+                srcset="img/catalog/buckwheat_small_tablet.png 1x, img/catalog/buckwheat_small_tablet@2x.png 2x" width="168" height="200">
               <img class="nutrition__image" src="img/catalog/buckwheat_small.png"
                 srcset="img/catalog/buckwheat_small@2x.png" width="140" height="112"
                 alt="Cat Energy со вкусом гречки, объём 500 грамм">
@@ -181,9 +185,9 @@
           <li class="product__item nutrition">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/buckwheat_huge_desktop.png 1x, img/catalog/buckwheat_huge_desktop@2x.png 2x">
+                srcset="img/catalog/buckwheat_huge_desktop.png 1x, img/catalog/buckwheat_huge_desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 768px)"
-                srcset="img/catalog/buckwheat_huge_tablet.png 1x, img/catalog/buckwheat_huge_tablet@2x.png 2x">
+                srcset="img/catalog/buckwheat_huge_tablet.png 1x, img/catalog/buckwheat_huge_tablet@2x.png 2x" width="168" height="200">
               <img class="nutrition__image" src="img/catalog/buckwheat_huge.png"
                 srcset="img/catalog/buckwheat_huge@2x.png" width="140" height="112"
                 alt="Cat Energy со вкусом гречки, объём 1000 грамм">
@@ -208,9 +212,9 @@
           <li class="product__item nutrition">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/catalog/rice_small_desktop.png 1x, img/catalog/rice_small_desktop@2x.png 2x">
+                srcset="img/catalog/rice_small_desktop.png 1x, img/catalog/rice_small_desktop@2x.png 2x" width="172" height="196">
               <source media="(min-width: 768px)"
-                srcset="img/catalog/rice_small_tablet.png 1x, img/catalog/rice_small_tablet@2x.png 2x">
+                srcset="img/catalog/rice_small_tablet.png 1x, img/catalog/rice_small_tablet@2x.png 2x" width="168" height="200">
               <img class="nutrition__image" src="img/catalog/rice_small.png" srcset="img/catalog/rice_small@2x.png"
                 width="140" height="112" alt="Cat Energy со вкусом риса, объём 500 грамм">
             </picture>
@@ -278,7 +282,7 @@
         </section>
         <section class="catalog__offer special-offer special-offer--background">
           <h2 class="visually-hidden">Специальное предложение при покупке всей продукции</h2>
-          <p class="special-offer__description font-lato">Закажите все и получите чехол для кота
+          <p class="special-offer__description font-lato special-offer__description--logo">Закажите все и получите чехол для кота
             в подарок!</p>
         </section>
       </div>
