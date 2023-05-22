@@ -1,5 +1,17 @@
+.social {
+  height: fit-content;
+}
+
 .social__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
 }

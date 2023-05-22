@@ -8,9 +8,17 @@
       position: absolute;
       height: 1px;
       background-color: #e6e6e6;
-      width: -moz-available;          /* WebKit-based browsers will ignore this. */
-      width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+      width: -moz-available;
+      /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available;
+      /* Mozilla-based browsers will ignore this. */
       left: -30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      content: unset;
     }
   }
 }
@@ -27,10 +35,6 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 72px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 32px;
   }
 }
 
@@ -69,6 +73,10 @@
     max-width: 250px;
     flex-direction: column;
     min-height: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 57px;
   }
 
   &--health {

@@ -8,13 +8,20 @@
   border: 1px solid #e7e7e7;
   flex: 1;
   box-sizing: border-box;
-  margin-bottom: 14px;
 
   &--weight {
-    max-width: 207px;
+    @media (max-width: @mobile-width-only) {
+      max-width: 207px;
+    }
   }
 
   &--age {
-    max-width: 173px;
+    @media (max-width: @mobile-width-only) {
+      max-width: 173px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 11px 20px;
   }
 }

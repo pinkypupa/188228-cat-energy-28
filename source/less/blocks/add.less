@@ -1,21 +1,79 @@
-.add__description {
-  font-weight: 400;
-  color: #000000;
-  margin: 0;
-}
-
 .add__list {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 221px 190px;
-    grid-template-rows: 40px 40px 52px;
-    column-gap: 64px;
+    grid-template-rows: 40px 40px;
+    column-gap: 123px;
     row-gap: 32px;
+    margin: 0 40px 54px 40px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
+  }
+}
+
+.add__item {
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+.add__description {
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+  padding: 6px 10px 6px 46px;
+}
+
+.add_label {
+  position: relative;
+}
+
+.add__checkbox {
+  margin: 0;
+}
+
+.add__mark {
+  position: absolute;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 0;
+  }
+}
+
+.add__checkbox:checked+.add__mark::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 4%;
+  background-image: url(../img/common/tick.svg);
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    left: 17%;
+    top: 14%;
+    background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
   }
 }
