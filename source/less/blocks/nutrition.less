@@ -4,14 +4,17 @@
   grid-template-rows: 2.8fr 1fr;
   row-gap: 13px;
   position: relative;
+  padding-top: 9.7px;
 
   &::before {
     content: "";
     position: absolute;
     height: 1px;
     background-color: #ebebeb;
-    width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
     left: -20px;
     right: -20px;
     top: -5%;
@@ -23,6 +26,7 @@
     justify-content: space-between;
     align-items: center;
     row-gap: unset;
+    padding-top: 8px;
 
     &::before {
       content: unset;
@@ -32,13 +36,13 @@
 
 .nutrition__image {
   @media (min-width: @tablet-width) {
-    margin-bottom: 34px;
+    // margin-bottom: 8px;
   }
 }
 
 .nutrition__content {
   @media (min-width: @tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 13px;
     width: 100%;
   }
 }
@@ -49,6 +53,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+  margin: 0;
+  max-width: 76px;
+  margin-bottom: 15px;
+  padding-top: 2px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -64,9 +72,13 @@
 }
 
 .nutrition__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    // посмотреть мб удалить
     position: relative;
 
     &:not(:last-child) {
@@ -117,6 +129,7 @@
   padding: 10px 20px;
   grid-column-start: 1;
   grid-column-end: 3;
+  max-height: 40px;
 
   @media (min-width: @tablet-width) {
     min-width: 248px;
