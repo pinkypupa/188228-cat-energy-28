@@ -6,10 +6,13 @@
     flex-direction: row;
     min-width: 440px;
     justify-content: space-between;
+    padding-top: 6px;
+    padding-right: 1px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 478px;
+    padding-top: 0;
   }
 }
 
@@ -64,11 +67,15 @@
       @media (min-width: @tablet-width) {
         content: "";
         position: absolute;
-        bottom: -12px;
+        bottom: -10px;
         left: 0;
         right: 0;
         height: 2px;
         background-color: #68b738;
+      }
+
+      @media (min-width: @desktop-width) {
+        content: unset;
       }
     }
   }
@@ -78,7 +85,7 @@
   @media (min-width: @desktop-width) {
     content: "";
     position: absolute;
-    bottom: -12px;
+    bottom: -7px;
     left: 0;
     right: 0;
     height: 2px;

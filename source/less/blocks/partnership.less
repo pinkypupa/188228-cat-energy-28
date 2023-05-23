@@ -10,24 +10,25 @@
 
 .partnership__wrapper {
   padding-top: 26px;
-  padding-bottom: 20px;
+  padding-bottom: 26px;
   display: flex;
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    padding: 56px 70px;
+    padding: 61px 70px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     box-sizing: border-box;
     content: "";
-    padding: 56px 60px;
+    padding: 60px 60px;
     z-index: 5;
     background-color: #ffffff;
     min-width: 565px;
     left: 7.6%;
     top: 24%;
+    column-gap: 87px;
   }
 }
 
@@ -48,6 +49,7 @@
 
   @media (min-width: @desktop-width) {
     width: 163px;
+    padding-left: 20px;
   }
 }
 
@@ -55,10 +57,14 @@
   font-size: 14px;
   line-height: 20px;
   max-width: 139px;
+  padding-left: 2px;
 
   @media (min-width: @tablet-width) {
     max-width: 160px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -72,14 +78,33 @@
   display: block;
   position: relative;
   height: 362px;
+  background-image: url("../img/map/map_mobile.png");
+  background-repeat: no-repeat;
   // пришлось сделать height вместо min-height, потому что с min не работает в ребёнке 100% height
+
+  @media (max-width: @mobile-width-only) and (min-resolution:2dppx) {
+    background-image: url("../img/map/map_mobile@2x.png");
+    background-size: 320px auto;
+  }
 
   @media (min-width: @tablet-width) {
     height: 400px;
+    background-image: url("../img/map/map_tablet.png");
+  }
+
+  @media (min-width: @tablet-width) and (min-resolution:2dppx) {
+    background-image: url("../img/map/map_tablet@2x.png");
+    background-size: 768px auto;
   }
 
   @media (min-width: @desktop-width) {
     height: 400px;
+    background-image: url("../img/map/map_desktop.png");
+  }
+
+  @media (min-width: @desktop-width) and (min-resolution:2dppx) {
+    background-image: url("../img/map/map_desktop@2x.png");
+    background-size: 1440px auto;
   }
 }
 
@@ -89,26 +114,4 @@
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-//пока сделала пин так
-// скорее всего нужно иначе
-.partnership__pin {
-  position: absolute;
-  left: 42%;
-  top: 38%;
-  width: 57px;
-  height: 53px;
-
-  @media (min-width: @tablet-width) {
-    width: 113px;
-    height: 106px;
-    left: 43%;
-    top: 26%;
-  }
-
-  @media (min-width: @desktop-width) {
-    left: 46%;
-    // top: 26%;
-  }
 }

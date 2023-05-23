@@ -6,9 +6,14 @@
   margin-left: auto;
   margin-right: auto;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+  }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
     align-items: stretch;
+    margin-bottom: 0;
   }
 }
 
@@ -29,7 +34,7 @@
     min-height: 374px;
     max-width: 570px;
     margin: 0 80px 71px 0;
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 25px 52px;
 
     &:last-child {
       margin: 0 0 71px 0;

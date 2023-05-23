@@ -2,7 +2,7 @@
   background-color: @dark-grey;
 
   @media (min-width: @tablet-width) {
-    background: linear-gradient(#ffffff 57.5%, #eaeaea 57.5%);
+    background: linear-gradient(#ffffff 55.5%, #eaeaea 55.5%);
   }
 
   @media (min-width: @desktop-width) {
@@ -11,14 +11,19 @@
 }
 
 .example__wrapper {
-  padding-top: 25px;
   padding-bottom: 40px;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -29,11 +34,13 @@
   text-align: left;
   margin: 0;
   margin-bottom: 40px;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -55,30 +62,17 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 69px;
-  }
-}
-
-.example__cost {
-  // padding-bottom: 316px;
-  // обратить внимание тут!!!!!
-
-  @media (min-width: @tablet-width) {
-    // padding-bottom: 728px;
-  }
-
-  @media (min-width: @desktop-width) {
-    // padding-bottom: 75px;
+    max-width: 436px;
   }
 }
 
 .example__statistics {
   display: flex;
   flex-direction: row;
-  // width: 280px;
   justify-content: space-between;
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 61px;
   }
 }
 
@@ -93,14 +87,68 @@
     justify-content: space-between;
     max-width: 708px;
     margin: 0;
+    margin-bottom: 99px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
     width: 366px;
+    padding-bottom: 65px;
+    margin-bottom: 0;
   }
 }
 
 .example__image {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
+    padding: 4px 74px 100px 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0px;
+    left: 106%;
+  }
+
+  &--after {
+    margin-left: -50%;
+    background-color: #eaeaea;
+
+    @media (min-width: @tablet-width) {
+      background: linear-gradient(#ffffff 29%, #eaeaea 29%);
+    }
+
+    @media (min-width: @desktop-width) {
+      background: linear-gradient(#ffffff 26.5%, #eaeaea 26.5%);
+    }
+  }
+}
+
+.example__cat-after {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 2px;
+  }
+}
+
+.example__control {
+  position: absolute;
   height: 256px;
+  left: 43%;
+  z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    height: unset;
+    left: 47%;
+  }
 }

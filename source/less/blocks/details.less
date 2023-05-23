@@ -13,6 +13,7 @@
       width: -webkit-fill-available;
       /* Mozilla-based browsers will ignore this. */
       left: -30px;
+      bottom: -27px;
     }
   }
 
@@ -47,11 +48,15 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 634px;
+    row-gap: 58px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: unset;
+    row-gap: unset;
   }
 }
 
@@ -59,20 +64,25 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 0;
-  margin-bottom: 20px;
-  padding-left: 80px;
+  margin-bottom: 19px;
+  padding-left: 81px;
+  padding-bottom: 6px;
   display: flex;
   flex-direction: row;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    // margin-bottom: 77px;
     padding: 0;
     padding-top: 111px;
-    padding-bottom: 130px;
+    padding-bottom: 57px;
     max-width: 250px;
     flex-direction: column;
     min-height: 0;
+
+    // &:nth-last-child(-n+2) {
+    //   margin-bottom: 47px;
+    // }
   }
 
   @media (min-width: @desktop-width) {
@@ -83,7 +93,7 @@
     background-image: url("../img/details/details_health.svg");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 60px 60px;
+    background-size: 62px 60px;
 
     @media (min-width: @tablet-width) {
       background-position: left top;
@@ -91,7 +101,7 @@
 
       &::before {
         content: "1";
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 280px;
@@ -100,8 +110,8 @@
         color: #f2f2f2;
         position: absolute;
         z-index: -1;
-        top: -37px;
-        right: 0;
+        top: -40px;
+        right: 25px;
       }
     }
   }
@@ -110,7 +120,7 @@
     background-image: url("../img/details/details_substance.svg");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 60px 60px;
+    background-size: 62px 60px;
 
     @media (min-width: @tablet-width) {
       background-position: left top;
@@ -118,7 +128,7 @@
 
       &::before {
         content: "2";
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 280px;
@@ -127,8 +137,8 @@
         color: #f2f2f2;
         position: absolute;
         z-index: -1;
-        top: -37px;
-        right: 0;
+        top: -39px;
+        right: 4px;
       }
     }
   }
@@ -137,7 +147,7 @@
     background-image: url("../img/details/details_meal.svg");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 60px 60px;
+    background-size: 62px 60px;
 
     @media (min-width: @tablet-width) {
       background-position: left top;
@@ -145,7 +155,7 @@
 
       &::before {
         content: "3";
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 280px;
@@ -154,8 +164,8 @@
         color: #f2f2f2;
         position: absolute;
         z-index: -1;
-        top: -37px;
-        right: 0;
+        top: -39px;
+        right: 2px;
       }
     }
   }
@@ -164,7 +174,7 @@
     background-image: url("../img/details/details_changes.svg");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 60px 60px;
+    background-size: 62px 60px;
 
     @media (min-width: @tablet-width) {
       background-position: left top;
@@ -172,7 +182,7 @@
 
       &::before {
         content: "4";
-        font-family: "Oswald", sans-serif;
+        font-family: "Oswald", "Arial", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 280px;
@@ -181,7 +191,7 @@
         color: #f2f2f2;
         position: absolute;
         z-index: -1;
-        top: -37px;
+        top: -39px;
         right: 0;
       }
     }
@@ -191,10 +201,12 @@
     font-size: 14px;
     line-height: 18px;
     margin: 0;
+    padding-top: 1px;
 
     @media (min-width: @tablet-width) {
       font-size: 16px;
       line-height: 24px;
+      padding-top: 0;
     }
   }
 }
