@@ -15,32 +15,32 @@
   }
 
   &--background {
-    background: url("../../img/gift/gift_section_mobile.png");
+    background: url("../img/gift/gift_section_mobile.png");
 
-    @media (max-width: @mobile-width-only) and (min-resolution:2dppx) {
-      background: url("../../img/gift/gift_section_mobile@2x.png");
+    @media (max-width: @mobile-width-only) and (min-resolution: 2dppx) {
+      background: url("../img/gift/gift_section_mobile@2x.png");
       background-size: 280px auto;
     }
 
     @media (min-width: @tablet-width) {
-      background: url("../../img/gift/gift_section_tablet.png");
+      background: url("../img/gift/gift_section_tablet.png");
       background-repeat: no-repeat;
       background-size: 707px auto;
       object-fit: contain;
     }
 
-    @media (min-width: @tablet-width) and (min-resolution:2dppx) {
-      background: url("../../img/gift/gift_section_tablet@2x.png");
+    @media (min-width: @tablet-width) and (min-resolution: 2dppx) {
+      background: url("../img/gift/gift_section_tablet@2x.png");
       background-size: 707px auto;
     }
 
     @media (min-width: @desktop-width) {
-      background: url("../../img/gift/gift_section_desktop.png");
+      background: url("../img/gift/gift_section_desktop.png");
       background-size: 245px auto;
     }
 
-    @media (min-width: @desktop-width) and (min-resolution:2dppx) {
-      background: url("../../img/gift/gift_section_desktop@2x.png");
+    @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
+      background: url("../img/gift/gift_section_desktop@2x.png");
       background-size: 245px auto;
     }
   }
@@ -52,19 +52,17 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
-  // почему без этого паддинга картинку не видно?
   padding: 188px 61px 43px 58px;
   position: relative;
 
   &--logo {
-    background-image: url("../../img/gift/icon_gift.svg");
+    background-image: url("../img/gift/icon_gift.svg");
     background-repeat: no-repeat;
     background-size: 77px 80px;
     background-position: center 59px;
   }
 
   @media (min-width: @tablet-width) {
-    // как здесь учесть переполнение?
     padding: 71px 124px 69px 422px;
     text-align: left;
 

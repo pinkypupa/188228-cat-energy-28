@@ -11,10 +11,6 @@
         position: absolute;
         height: 1px;
         background-color: #d9d9d9;
-        width: -moz-available;
-        /* WebKit-based browsers will ignore this. */
-        width: -webkit-fill-available;
-        /* Mozilla-based browsers will ignore this. */
         left: -20px;
         right: -20px;
         top: -15%;
@@ -25,10 +21,6 @@
         position: absolute;
         height: 1px;
         background-color: #d9d9d9;
-        width: -moz-available;
-        /* WebKit-based browsers will ignore this. */
-        width: -webkit-fill-available;
-        /* Mozilla-based browsers will ignore this. */
         left: -20px;
         right: -20px;
         bottom: -15%;
@@ -168,8 +160,7 @@
   }
 }
 
-// оно не в центре :(
-.goal__radio:checked+.goal__mark::before {
+.goal__radio:checked + .goal__mark::before {
   content: "";
   position: absolute;
   left: 7.5px;
@@ -230,26 +221,21 @@
 
 .goal__link {
   display: flex;
-  // max-width: 139px;
-  // justify-content: space-between;
   align-items: center;
   padding: 4px 17px 4px 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    // max-width: 165px;
     padding: 6px 11px 4px 2px;
   }
 
   @media (min-width: @desktop-width) {
-    // max-width: 168px;
     padding: 4px 11px 4px 0;
   }
 
   &:hover {
     .goal__icon {
       width: 32px;
-      // height: 10px;
     }
   }
 
@@ -262,7 +248,6 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  // margin-right: 25px;
   margin-right: 17px;
 
   @media (min-width: @tablet-width) {
@@ -273,7 +258,6 @@
 
 .goal__icon {
   width: 24px;
-  // height: 12px;
 
   @media (min-width: @tablet-width) {
     &--icon {

@@ -4,17 +4,13 @@
   grid-template-rows: 2.8fr 1fr;
   row-gap: 13px;
   position: relative;
-  padding-top: 9.7px;
+  padding-top: 10px;
 
   &::before {
     content: "";
     position: absolute;
     height: 1px;
     background-color: #ebebeb;
-    width: -moz-available;
-    /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;
-    /* Mozilla-based browsers will ignore this. */
     left: -20px;
     right: -20px;
     top: -5%;
@@ -35,12 +31,6 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
-  }
-}
-
-.nutrition__image {
-  @media (min-width: @tablet-width) {
-    // margin-bottom: 8px;
   }
 }
 
@@ -87,7 +77,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    // посмотреть мб удалить
     position: relative;
 
     &:not(:last-child) {
