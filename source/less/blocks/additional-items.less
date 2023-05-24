@@ -14,7 +14,7 @@
     position: absolute;
     height: 2px;
     background-color: #68b738;
-    width: 100vw;
+    width: calc(100vw - 20px);
     top: 64%;
     left: 0;
     z-index: -1;
@@ -26,8 +26,10 @@
     line-height: 36px;
     margin-bottom: 80px;
     padding: 0 36px;
+    width: 100vw;
+    left: -30px;
     // как тут быть с переполнением?
-    max-width: 340px;
+    // max-width: 340px;
     background-color: #ffffff;
 
     &::before {

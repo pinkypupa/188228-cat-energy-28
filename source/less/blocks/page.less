@@ -1,14 +1,6 @@
 .page {
   min-width: 320px;
   min-height: 100vh;
-
-  @media (min-width: @tablet-width) {
-    // max-width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    // max-width: 1440px;
-  }
 }
 
 .page__body {
@@ -30,9 +22,7 @@
       content: "";
       position: absolute;
       background: url("../img/common/big_cat_background@1x.png");
-      // padding: 111px 110px 185px 190px;
       min-height: 696px;
-      // min-width: 720px;
       left: 50%;
       right: 0;
       box-sizing: border-box;
@@ -42,19 +32,16 @@
     }
   }
 
-  @media (min-width: @desktop-width) and (min-resolution:2dppx) {
+  @media (min-width: @desktop-width) and (min-resolution: 2dppx) {
     &::before {
       content: "";
       position: absolute;
       background: url("../img/common/big_cat_background@2x.png");
-      background-size: 720px auto;
-      // padding: 111px 110px 185px 190px;
-      // left: 50%;
-      // right: 0;
-      // box-sizing: border-box;
-      // background-size: cover;
-      // background-repeat: no-repeat;
-      // z-index: -50;
+      background-size: 100% auto;
+      box-sizing: border-box;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -50;
     }
   }
 }
