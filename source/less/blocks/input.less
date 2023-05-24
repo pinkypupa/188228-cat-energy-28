@@ -1,9 +1,41 @@
 .input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  outline: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid:placeholder-shown {
+    border: 1px solid #e7e7e7;
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:focus {
+      border: 2px solid #444444;
+    }
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 }

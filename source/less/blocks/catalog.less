@@ -1,9 +1,33 @@
+.catalog {
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .catalog__title {
-  margin: 27px 0 49px 0;
+  margin: 0;
+  margin-bottom: 49px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__card {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .catalog__offer {
@@ -17,5 +41,6 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 86px;
   }
 }

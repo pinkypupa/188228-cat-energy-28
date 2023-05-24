@@ -1,43 +1,59 @@
-.main-header__wrapper {
-  display: flex;
-  flex-direction: column;
-  // height: 65px;
-  // Нужно ли задавать высоту самого хедера? - подумать
+.main-header {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: @mobile-width-only) {
+    max-width: 320px;
+    position: relative;
+  }
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 708px;
-    // height: 52px;
+    max-width: 769px;
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: space-between;
+    max-width: 1440px;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  justify-content: space-between;
+
+  &--page {
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 27px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 48px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
     flex-direction: row;
-    width: 1220px;
+    padding-top: 0;
+    align-items: center;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+    padding-bottom: 0;
+    margin-bottom: 72px;
   }
 }
 
 .main-header__logo-image {
   display: inline-block;
-  margin-right: 65px;
-  height: 38px;
 
-  @media (min-width: @tablet-width) {
-    height: 52px;
+  &:hover {
+    opacity: 0.8;
   }
 
-  @media (min-width: @desktop-width) {
-    height: 60px;
-  }
-}
-
-.main-nav__toggle {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
+  &:active {
+    opacity: 0.6;
   }
 }

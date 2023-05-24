@@ -7,24 +7,41 @@
   flex-direction: row;
   width: 188px;
   justify-content: space-between;
+  align-self: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     width: 174px;
     align-items: end;
+    justify-content: start;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     width: 327px;
     justify-content: space-between;
+    align-self: self-start;
   }
 }
 
 .cost__desription {
   margin: 0;
+  padding-left: 2px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-bottom: 9px;
+  }
 }
 
 .cost__amount {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 9px;
+  }
 }

@@ -1,32 +1,144 @@
+.nutrition {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 2.8fr 1fr;
+  row-gap: 13px;
+  position: relative;
+  padding-top: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #ebebeb;
+    left: -20px;
+    right: -20px;
+    top: -5%;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: unset;
+    padding-top: 8px;
+
+    &::before {
+      content: unset;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.nutrition__content {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 13px;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .nutrition__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #222222;
+  margin: 0;
+  max-width: 76px;
+  margin-bottom: 15px;
+  padding-top: 2px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 140px;
+    text-align: center;
+    margin: 0 auto 21px;
+  }
+
+  @media (min-width: @tablet-width) {
+    line-height: 21px;
+    padding-left: 7px;
+  }
+}
+
+.nutrition__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: #cdcdcd;
+      width: 250px;
+      left: 0;
+      bottom: -60%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      width: 170px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .nutrition__category {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .nutrition__detail {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .nutrition__button {
   font-size: 16px;
   line-height: 20px;
+  padding: 10px 20px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-height: 40px;
 
   @media (min-width: @tablet-width) {
-    max-width: 248px;
+    min-width: 248px;
+    padding: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 168px;
+    min-width: 168px;
   }
 }

@@ -1,0 +1,36 @@
+.social {
+  height: fit-content;
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.social__link {
+  fill: #666666;
+
+  @media (min-width: @tablet-width) {
+    &--vkontakte {
+      padding-left: 23px;
+      padding-top: 1px;
+    }
+  }
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

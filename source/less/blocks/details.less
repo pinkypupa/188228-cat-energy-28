@@ -1,3 +1,33 @@
+.details {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: @mobile-width-only) {
+    max-width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: #e6e6e6;
+      left: -30px;
+      bottom: -27px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+
+    &::after {
+      content: unset;
+    }
+  }
+}
+
 .details__header {
   font-weight: 400;
   font-size: 36px;
@@ -7,11 +37,9 @@
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 32px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
   }
 }
 
@@ -19,15 +47,20 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: stretch;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: 634px;
+    row-gap: 58px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    max-width: unset;
+    row-gap: unset;
   }
 }
 
@@ -35,23 +68,144 @@
   font-size: 14px;
   line-height: 18px;
   margin-top: 0;
-  margin-bottom: 20px;
-  padding: 0 20px 0 80px;
-  max-width: 280px;
+  margin-bottom: 19px;
+  padding-left: 81px;
+  padding-bottom: 6px;
   display: flex;
   flex-direction: row;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
-    padding: 111px 0 0 0;
+    padding: 0;
+    padding-top: 111px;
+    padding-bottom: 57px;
     max-width: 250px;
     flex-direction: column;
+    min-height: 0;
   }
 
   @media (min-width: @desktop-width) {
+    padding-bottom: 57px;
+  }
+
+  &--health {
+    background-image: url("../img/details/details_health.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 62px 60px;
+
+    @media (min-width: @tablet-width) {
+      background-position: left top;
+      background-size: 80px 80px;
+
+      &::before {
+        content: "1";
+        font-family: "Oswald", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #f2f2f2;
+        position: absolute;
+        z-index: -1;
+        top: -40px;
+        right: 25px;
+      }
+    }
+  }
+
+  &--substance {
+    background-image: url("../img/details/details_substance.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 62px 60px;
+
+    @media (min-width: @tablet-width) {
+      background-position: left top;
+      background-size: 80px 80px;
+
+      &::before {
+        content: "2";
+        font-family: "Oswald", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #f2f2f2;
+        position: absolute;
+        z-index: -1;
+        top: -39px;
+        right: 4px;
+      }
+    }
+  }
+
+  &--meal {
+    background-image: url("../img/details/details_meal.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 62px 60px;
+
+    @media (min-width: @tablet-width) {
+      background-position: left top;
+      background-size: 80px 80px;
+
+      &::before {
+        content: "3";
+        font-family: "Oswald", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #f2f2f2;
+        position: absolute;
+        z-index: -1;
+        top: -39px;
+        right: 2px;
+      }
+    }
+  }
+
+  &--changes {
+    background-image: url("../img/details/details_changes.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 62px 60px;
+
+    @media (min-width: @tablet-width) {
+      background-position: left top;
+      background-size: 80px 80px;
+
+      &::before {
+        content: "4";
+        font-family: "Oswald", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 280px;
+        line-height: 280px;
+        text-align: center;
+        color: #f2f2f2;
+        position: absolute;
+        z-index: -1;
+        top: -39px;
+        right: 0;
+      }
+    }
+  }
+
+  .details__description {
+    font-size: 14px;
+    line-height: 18px;
     margin: 0;
-    padding: 111px 0 0 0;
-    max-width: 250px;
-    flex-direction: column;
+    padding-top: 1px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 0;
+    }
   }
 }
