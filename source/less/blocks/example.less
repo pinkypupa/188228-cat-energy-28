@@ -29,9 +29,6 @@
 
 .example__wrapper {
   padding-bottom: 40px;
-  // width: fit-content;
-  // margin-left: auto;
-  // margin-right: auto;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -79,7 +76,6 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 67px;
-    // margin-bottom: 21px;
     max-width: 436px;
   }
 }
@@ -116,9 +112,7 @@
   }
 }
 
-.example__image {
-  position: relative;
-
+.example__before {
   @media (min-width: @tablet-width) {
     height: 512px;
     padding: 4px 74px 100px 74px;
@@ -126,48 +120,71 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 0px;
-    // left: 106%;
-    left: 48%;
-  }
-
-  &--after {
-    margin-left: -50%;
-    background-color: #eaeaea;
-
-    @media (min-width: @tablet-width) {
-      background: linear-gradient(#ffffff 29%, #eaeaea 29%);
-    }
-
-    @media (min-width: @desktop-width) {
-      background: linear-gradient(#ffffff 26.5%, #eaeaea 26.5%);
-    }
+    right: 36px;
+    top: -3px;
   }
 }
 
-.example__cat-after {
+.example__wrapper-after {
   overflow: hidden;
   position: absolute;
-  top: 0;
   left: 50%;
+  top: 55%;
 
   @media (min-width: @tablet-width) {
-    top: 5px;
+    top: 41%;
   }
 
   @media (min-width: @desktop-width) {
     top: 2px;
+    left: 73%;
+  }
+}
+
+.example__after {
+  transform: translateX(-50%);
+  background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(#ffffff 29.5%, #eaeaea 29.5%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(#ffffff 26.5%, #eaeaea 26.5%);
   }
 }
 
 .example__control {
   position: absolute;
   height: 256px;
-  left: 43%;
+  left: 50%;
   z-index: 5;
 
   @media (min-width: @tablet-width) {
     height: unset;
-    left: 47%;
+    top: 41%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -4%;
+    right: 27%;
+    left: unset;
+  }
+}
+
+.example__button {
+  position: absolute;
+  z-index: 6;
+  right: 43%;
+  bottom: 23%;
+
+  @media (min-width: @tablet-width) {
+    right: 47.2%;
+    bottom: 32.2%;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 25.7%;
+    bottom: 53.2%;
   }
 }

@@ -29,6 +29,14 @@
       color: #ffffff;
     }
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item {
@@ -62,7 +70,6 @@
   }
 
   &--current {
-
     &::before {
       @media (min-width: @tablet-width) {
         content: "";
@@ -75,7 +82,7 @@
       }
 
       @media (min-width: @desktop-width) {
-        content: unset;
+        // content: unset;
       }
     }
   }
