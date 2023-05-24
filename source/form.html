@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 150×150 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -103,10 +107,20 @@
               <label class="owner__label label" for="owner-email">E-mail:*</label>
               <input required class="owner__input input" placeholder="kuklachev@gmail.com" type="email"
                 id="owner-email">
+              <svg class="owner__input--email" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="black"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
             <div class="form__wrapper form__wrapper--owner">
               <label class="owner__label label" for="owner-phone">Телефон:*</label>
               <input required class="owner__input input" placeholder="8 (960) 900-60-90" type="tel" id="owner-phone">
+              <svg class="owner__input--phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
+                  stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </div>
           </fieldset>
         </div>

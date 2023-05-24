@@ -1,3 +1,20 @@
+.main-header {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: @mobile-width-only) {
+    max-width: 320px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 769px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   flex-direction: row;
@@ -16,16 +33,12 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    width: 708px;
     padding-top: 0;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
     border: none;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
     padding-top: 54px;
     padding-bottom: 0;
     margin-bottom: 72px;

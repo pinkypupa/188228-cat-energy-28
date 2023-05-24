@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 150×150 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -56,10 +60,10 @@
         </p>
         <picture>
           <source media="(min-width: 1200px)"
-            srcset="img/common/food_can_tablet.png 1x, img/common/food_can_tablet@2x.png 2x" width="552" height="499">
+            srcset="img/common/food_can_tablet.png, img/common/food_can_tablet@2x.png 2x" width="552" height="499">
           <source media="(min-width: 768px)"
-            srcset="img/common/food_can_tablet.png 1x, img/common/food_can_tablet@2x.png 2x" width="709" height="609">
-          <img class="main-container__image" src="img/common/food_can.png 1x" srcset="img/common/food_can@2x.png 2x"
+            srcset="img/common/food_can_tablet.png, img/common/food_can_tablet@2x.png 2x" width="709" height="609">
+          <img class="main-container__image" src="img/common/food_can.png" srcset="img/common/food_can@2x.png 2x"
             width="280" height="270" alt="Функциональное питание для котов">
         </picture>
         <a class="promo__button button" href="#">Подобрать
@@ -122,51 +126,56 @@
         </ul>
       </section>
       <section class="example">
-        <div class="example__wrapper inner-indent">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description font-lato">Борис сбросил 5 кг за 2 месяца, просто заменив
-            свой обычный корм на Cat Energy Slim. Отличный результат без&nbspизнуряющих тренировок! При этом он не менял
-            своих
-            привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__data">
-            <div class="example__statistics">
-              <div class="statistics-wrapper">
-                <b class="statistics-wrapper__title">5 кг</b>
-                <p class="statistics-wrapper__subtitle font-lato">снижение веса</p>
+        <div class="example__position">
+          <div class="example__wrapper inner-indent">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description font-lato">Борис сбросил 5 кг за 2 месяца, просто заменив
+              свой обычный корм на Cat Energy Slim. Отличный результат без&nbspизнуряющих тренировок! При этом он не
+              менял
+              своих
+              привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__data">
+              <div class="example__statistics">
+                <div class="statistics-wrapper">
+                  <b class="statistics-wrapper__title">5 кг</b>
+                  <p class="statistics-wrapper__subtitle font-lato">снижение веса</p>
+                </div>
+                <div class="statistics-wrapper">
+                  <b class="statistics-wrapper__title">60 дней</b>
+                  <p class="statistics-wrapper__subtitle font-lato">затрачено времени</p>
+                </div>
               </div>
-              <div class="statistics-wrapper">
-                <b class="statistics-wrapper__title">60 дней</b>
-                <p class="statistics-wrapper__subtitle font-lato">затрачено времени</p>
+              <div class="example__cost cost">
+                <p class="cost__desription">Затраты на питание:</p>
+                <p class="cost__amount">15 000 руб.</p>
               </div>
             </div>
-            <div class="example__cost cost">
-              <p class="cost__desription">Затраты на питание:</p>
-              <p class="cost__amount">15 000 руб.</p>
-            </div>
-          </div>
-          <div class="example__image">
-            <picture>
-              <source media="(min-width: 768px)"
-                srcset="img/slider/cat_before_tablet.png 1x, img/slider/cat_before_tablet@2x.png 2x" width="560"
-                height="512">
-              <img class="example__image--before" src="img/slider/cat_before_mobile.png"
-                srcset="img/slider/cat_before_mobile@2x.png" width="280" height="256" alt="Кот Борис до изменений">
-            </picture>
-            <svg class="example__control" width="40" height="512" viewBox="0 0 40 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" width="4" height="512" rx="2" fill="#666666" />
-              <rect x="1" y="237" width="38" height="38" rx="19" fill="white" />
-              <path d="M16 247L8 256L16 265V247Z" fill="#666666" />
-              <path d="M32 256L24 247V265L32 256Z" fill="#666666" />
-              <rect x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
-            </svg>
-            <div class="example__cat-after">
+            <div class="example__image">
               <picture>
                 <source media="(min-width: 768px)"
-                  srcset="img/slider/cat_after_tablet.png 1x, img/slider/cat_after_tablet@2x.png 2x" width="560"
+                  srcset="img/slider/cat_before_tablet.png, img/slider/cat_before_tablet@2x.png 2x" width="560"
                   height="512">
-                <img class="example__image--after" src="img/slider/cat_after_mobile.png"
-                  srcset="img/slider/cat_after_mobile@2x.png" width="280" height="256" alt="Кот Борис после изменений">
+                <img class="example__image--before" src="img/slider/cat_before_mobile.png"
+                  srcset="img/slider/cat_before_mobile@2x.png" width="280" height="256" alt="Кот Борис до изменений">
               </picture>
+              <svg class="example__control" width="40" height="512" viewBox="0 0 40 512" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="18" width="4" height="512" rx="2" fill="#666666" />
+                <rect x="1" y="237" width="38" height="38" rx="19" fill="white" />
+                <path d="M16 247L8 256L16 265V247Z" fill="#666666" />
+                <path d="M32 256L24 247V265L32 256Z" fill="#666666" />
+                <rect x="1" y="237" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+              </svg>
+              <div class="example__cat-after">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/slider/cat_after_tablet.png, img/slider/cat_after_tablet@2x.png 2x" width="560"
+                    height="512">
+                  <img class="example__image--after" src="img/slider/cat_after_mobile.png"
+                    srcset="img/slider/cat_after_mobile@2x.png" width="280" height="256"
+                    alt="Кот Борис после изменений">
+                </picture>
+              </div>
             </div>
           </div>
         </div>

@@ -12,13 +12,21 @@
   padding-top: 26px;
   padding-bottom: 26px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: @mobile-width-only) {
+    max-width: 320px;
+  }
 
   @media (min-width: @tablet-width) {
+    max-width: 628px;
     justify-content: space-between;
     padding: 61px 70px;
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 1220px;
     position: absolute;
     box-sizing: border-box;
     content: "";

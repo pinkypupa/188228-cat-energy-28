@@ -1,4 +1,6 @@
 .owner {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     margin: 0 36px 0 40px;
   }
@@ -9,7 +11,28 @@
   border: 1px solid #cdcdcd;
   flex: 1;
   box-sizing: border-box;
-  // margin-bottom: 14px;
+
+  &--email {
+    position: absolute;
+    top: 13%;
+    right: 18px;
+
+    @media (min-width: @desktop-width) {
+      top: 30%;
+      right: 55%;
+    }
+  }
+
+  &--phone {
+    position: absolute;
+    top: 70%;
+    right: 13px;
+
+    @media (min-width: @desktop-width) {
+      top: 30%;
+      right: 18px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 11px 20px;
