@@ -1,10 +1,14 @@
 .personal-data__label {
   margin-right: 13px;
   padding: 13px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 12px 0;
+  }
 }
 
 .personal-data__input {
-  padding: 14px 20px;
+  padding: 13px 20px;
   border: 1px solid #e7e7e7;
   flex: 1;
   box-sizing: border-box;
@@ -21,7 +25,11 @@
     }
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding: 11px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 20px;
   }
 }

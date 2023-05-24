@@ -1,7 +1,7 @@
 .add__list {
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 221px 190px;
+    grid-template-columns: 221px 210px;
     grid-template-rows: 40px 40px;
     column-gap: 123px;
     row-gap: 32px;
@@ -9,9 +9,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 221px);
+    grid-template-rows: 40px;
+    column-gap: 104px;
     margin: 0;
   }
 }
@@ -19,7 +20,7 @@
 .add__item {
   @media (max-width: @mobile-width-only) {
     &:not(:last-child) {
-      margin-bottom: 13px;
+      margin-bottom: 12px;
     }
   }
 
@@ -33,6 +34,11 @@
   color: #000000;
   margin: 0;
   padding: 6px 10px 6px 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-top: 5px;
+  }
 }
 
 .add_label {

@@ -45,13 +45,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 32% 29% 27%;
+    // grid-template-columns: 32% 29% 27%;
+    grid-template-columns: 31% 32% 27%;
     grid-template-rows: 1fr;
     column-gap: 40px;
     width: 896px;
     border-left: none;
     border-right: none;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 16px 0;
     box-sizing: border-box;
   }
 }
@@ -71,6 +72,10 @@
     padding-bottom: 20px;
     padding-left: 2px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .additional-card__text {
@@ -79,16 +84,14 @@
   padding-bottom: 2px;
 
   @media (min-width: @tablet-width) {
-    // display: grid;
-    // grid-template-columns: repeat(2, 50%);
-    // grid-template-rows: 1fr;
-    // grid-area: 1/2/2/3;
     justify-content: end;
     padding-bottom: 12px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    padding-bottom: 0;
+    justify-content: space-between;
   }
 }
 
@@ -102,6 +105,10 @@
     line-height: 20px;
     text-align: right;
     margin-right: 55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
