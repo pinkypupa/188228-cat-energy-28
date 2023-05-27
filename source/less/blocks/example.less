@@ -160,6 +160,7 @@
   height: 256px;
   left: 50%;
   z-index: 5;
+  transform: translateX(-50%);
 
   @media (min-width: @tablet-width) {
     height: unset;
@@ -167,8 +168,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: -4%;
-    right: 27%;
+    top: 0;
+    bottom: 0;
+    right: 26.7%;
     left: unset;
   }
 }
@@ -176,16 +178,18 @@
 .example__button {
   position: absolute;
   z-index: 6;
-  right: 43%;
+  left: 50%;
   bottom: 23%;
+  transform: translateX(-50%);
 
   @media (min-width: @tablet-width) {
-    right: 47.2%;
+    right: 50%;
     bottom: 32.2%;
   }
 
   @media (min-width: @desktop-width) {
-    right: 25.7%;
+    left: unset;
+    right: 24.1%;
     bottom: 53.2%;
   }
 }
